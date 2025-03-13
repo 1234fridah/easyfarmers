@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Our Products";
+}
+
+<div class="container mt-5">
+    <h1 class="text-center">Our Farming Machinery</h1>
+    <p class="text-center">Find the best tools for your farming needs.</p>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/tractor-john-deere-8270-r-poza-1.jpeg" alt="Tractor" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Heavy Duty Tractor</h5>
+                    <p class="card-text">15,000 - Perfect for large-scale farming.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 1, name = "Tractor", price = 15000 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/plow.jpg" alt="Plow" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Advanced Plow</h5>
+                    <p class="card-text">3,500 - Ideal for tilling and preparing soil.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 2, name = "Plow", price = 3500 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/seeder.jpg" alt="Seeder" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Precision Seeder</h5>
+                    <p class="card-text">2,000 - Ensures accurate seed placement.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 3, name = "Seeder", price = 2000 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/harvester.jpg" alt="Harvester" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Combine Harvester</h5>
+                    <p class="card-text">50,000 - Efficient harvesting for large fields.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 4, name = "Harvester", price = 50000 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/irrigation.jpg" alt="Irrigation System" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Automated Irrigation System</h5>
+                    <p class="card-text">8,000 - Save water and increase efficiency.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 5, name = "Irrigation System", price = 8000 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/fertilizer.jpg" alt="Fertilizer Spreader" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Fertilizer Spreader</h5>
+                    <p class="card-text">1,200 - Perfect for even distribution of fertilizers.</p>
+                    <a href="@Url.Action("AddToCart", "Cart", new { id = 6, name = "Fertilizer Spreader", price = 1200 })" class="btn btn-success">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

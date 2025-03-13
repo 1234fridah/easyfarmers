@@ -1,0 +1,94 @@
+﻿@{
+    ViewData["Title"] = "Easy Farmers - Home";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Easy Farmers</h1>
+    <p>Your one-stop shop for quality farming machinery and expert agricultural advice.</p>
+
+    <div class="mt-4">
+        <a class="btn btn-primary btn-lg" href="@Url.Action("Index", "Products")">Shop Farming Machinery</a>
+        <a class="btn btn-success btn-lg" href="@Url.Action("Index", "Education")">Learn Farming Techniques</a>
+        <a class="btn btn-info btn-lg" href="@Url.Action("Contact", "Home")">Contact Us</a>
+    </div>
+</div>
+
+<!-- Live Images Section -->
+<div class="container mt-5">
+    <h2 class="text-center">Explore Our Products & Services</h2>
+
+    <div class="row mt-4">
+        <!-- Farming Machinery Image -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/farming-machinery.jpg" class="card-img-top" alt="Farming Machinery">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Farming Machinery</h5>
+                    <p class="card-text">High-quality tools to improve farm productivity.</p>
+                    <a href="@Url.Action("Index", "Products")" class="btn btn-primary">View Products</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Farming Education Image -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/farming-education.jpg" class="card-img-top" alt="Farming Education">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Learn Farming</h5>
+                    <p class="card-text">Get expert agricultural knowledge & techniques.</p>
+                    <a href="@Url.Action("Index", "Education")" class="btn btn-success">Start Learning</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us Image -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/contact-us.jpg" class="card-img-top" alt="Contact Us">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Get in Touch</h5>
+                    <p class="card-text">Need help? Contact our support team.</p>
+                    <a href="@Url.Action("Contact", "Home")" class="btn btn-info">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Why Choose Easy Farmers Section -->
+<div class="container mt-5">
+    <h2>Why Choose Easy Farmers?</h2>
+    <ul class="list-unstyled">
+        <li>✅ High-quality farming tools and machinery</li>
+        <li>✅ Expert agricultural knowledge and resources</li>
+        <li>✅ Affordable prices and convenient delivery</li>
+        <li>✅ Support for sustainable farming practices</li>
+    </ul>
+</div>
+
+<!-- Testimonials Section -->
+<div class="container mt-5">
+    <h2 class="text-center">What Our Customers Say</h2>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Easy Farmers provided me with the best machinery for my farm. Highly recommend!"</p>
+                    <footer class="blockquote-footer">John Doe, Farmer</footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"Their customer service is outstanding! They helped me choose the right tools."</p>
+                    <footer class="blockquote-footer">Jane Smith, Agricultural Consultant</footer>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">"I learned so much from their educational resources. A must-visit for farmers!"</p>
+                    <footer class="blockquote-footer">Mike Johnson, Hobby Farmer</footer>
